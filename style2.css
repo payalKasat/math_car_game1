@@ -1,0 +1,366 @@
+/**
+* Created by ashwi on 5/8/2017.
+*/
+.toy_logo_row{
+    border-bottom: 3px solid #428bdd;
+}
+.game_title {
+    font-family: "Californian FB";
+    text-shadow: 3px 3px 3px gray;
+    font-size: 55px;
+}
+.toy_logo{
+    height:12vh;
+    width: 20vw;
+    position: absolute;
+    right:0;
+}
+
+/* header toy car animation start*/
+.toy_logo{
+    animation: mymove 5s ;
+}
+
+@-webkit-keyframes mymove {
+    0%   { right:0%; top:0%;}
+    25%  { right:10%; top:0%;}
+    50%  { right:20%; top:0%;}
+    75%  { right:30%; top:0%;}
+    100% { right:40%; top:0%;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   { right:0%; top:0%;}
+    25%  { right:10%; top:0%;}
+    50%  { right:20%; top:0%;}
+    75%  { right:30%; top:0%;}
+    100% { right:40%; top:0%;}
+}
+/*header toy car animation end*/
+.dropdown-menu>li>a:hover{
+    background-color: #ce6955;
+}
+
+
+.navbar-default .navbar-nav>li>a {
+    /*color: #333;*/
+    /*#font-weight: bold;*/
+    /*border: 1px solid;*/
+    /*border-radius: 3vh;*/
+    /*margin: 1px;*/
+    /*background-color: #ce6955;*/
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    background-color: #333333;
+}
+.navbar-header .navbar-brand{
+    color: black;
+}
+.game_board{
+    /*background-image: url("images/track3.jpg");*/
+    /*background-size: 100% 100%;*/
+    background-color: lightgray;
+    height: 60vh;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    z-index: 4;
+}
+.equation{
+    height: 8vh;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.message_window{
+    position: relative;
+    top:18vh;
+    height: 10vh;
+    margin-left: 36%;
+    color: black;
+    text-align: center;
+    font-size: 5vh;
+}
+.equation_ans{
+    height: 8vh;
+    font-size: 2.5em;
+    color: black;
+    margin-left: 25%;
+
+}
+.equation_row{
+    position: absolute;
+    margin-left: 35%;
+
+}
+.enter{
+    position: relative;
+    top:17vh;
+    margin-left: 36%;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.reset{
+    /*position: absolute;*/
+    /*top:70%;*/
+    #margin-left: 35%;
+    /*font-size: large;*/
+    /*font-weight: bold;*/
+}
+.math_equation{
+    font-size: 3vw;
+    color: white;
+    margin-left: 35%;
+}
+.equation_result{
+    margin-left: 45%;
+}
+
+.score,.level{
+    font-size:2em;
+}
+.car{
+    height: 80px;
+    width: 80px;
+    #margin: 1%;
+    background-image:url("images/car_toy.png");
+    background-size: 100% 100%;
+}
+
+.car_begging{
+    position: relative;
+    -webkit-animation-name: example_start; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example_start;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example_start {
+    100%  {left:0%; top:0%;}
+}
+/* Standard syntax */
+@keyframes example_start {
+    100%  {left:0%; top:0%;}
+}
+
+.car_move{
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example {
+    0%   {left:0%; top:0%;}
+    100%  {left:33%; top:0%;}
+}
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0%; top:0%;}
+    100%  {left:33%; top:0%;}
+}
+.car_move2{
+    position: relative;
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example2 {
+    0%   {left:33%; top:0%;}
+    100%  {left:60%; top:0%;}
+}
+/* Standard syntax */
+@keyframes example2 {
+    0%   {left:33%; top:0%;}
+    100%  {left:60%; top:0%;}
+}
+
+.car_move3{
+    position: relative;
+    -webkit-animation-name: example3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example3;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example3 {
+    0%   {left:60%; top:0%;}
+    100%  {left:85%; top:0%;}
+}
+/* Standard syntax */
+@keyframes example3 {
+    0%   {left:60%; top:0%;}
+    100%  {left:85%; top:0%;}
+}
+.car_move4{
+    position: relative;
+    -webkit-animation-name: example4; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example4;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example4 {
+    0%   {left:90%; top:0%;}
+    100%  {left:90%; top:45%;}
+}
+/* Standard syntax */
+@keyframes example4 {
+    0%   {left:90%; top:0%;}
+    100%  {left:90%; top:45%;}
+}
+.car_move5{
+     position: relative;
+     -webkit-animation-name: example5; /* Safari 4.0 - 8.0 */
+     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+     animation-name: example5;
+     animation-duration: 4s;
+     transition-timing-function: linear;
+     animation-fill-mode: forwards;
+ }
+@-webkit-keyframes example5 {
+    0%   {left:90%; top:45%;}
+    100%  {left:90%; top:75%;}
+}
+/* Standard syntax */
+@keyframes example5 {
+    0%   {left:90%; top:45%;}
+    100%  {left:90%; top:75%;}
+}
+.car_move6{
+    position: relative;
+    -webkit-animation-name: example6; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example6;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example6 {
+    0%   {left:90%; top:75%;}
+    100%  {left:65%; top:80%;}
+}
+/* Standard syntax */
+@keyframes example6 {
+    0%   {left:90%; top:75%;}
+    100%  {left:65%; top:75%;}
+}
+.car_move7{
+     position: relative;
+     -webkit-animation-name: example7; /* Safari 4.0 - 8.0 */
+     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+     animation-name: example7;
+     animation-duration: 4s;
+     transition-timing-function: linear;
+     animation-fill-mode: forwards;
+ }
+@-webkit-keyframes example7 {
+    0%   {left:65%; top:75%;}
+    100%  {left:30%; top:75%;}
+}
+/* Standard syntax */
+@keyframes example7 {
+    0%   {left:65%; top:75%;}
+    100%  {left:30%; top:75%;}
+}
+.car_move8{
+    position: relative;
+    -webkit-animation-name: example8; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example8;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example8 {
+    0%   {left:30%; top:75%;}
+    100%  {left:0%; top:75%;}
+}
+/* Standard syntax */
+@keyframes example8 {
+    0%   {left:30%; top:75%;}
+    100%  {left:0%; top:75%;}
+}
+.car_move9{
+    position: relative;
+    -webkit-animation-name: example9; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example9;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example9 {
+    0%   {left:0%; top:75%;}
+    100%  {left:0%; top:45%;}
+}
+/* Standard syntax */
+@keyframes example9 {
+    0%   {left:0%; top:75%;}
+    100%  {left:0%; top:45%;}
+}
+.car_move10{
+    position: relative;
+    -webkit-animation-name: example10; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example10;
+    animation-duration: 4s;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes example10 {
+    0%   {left:0%; top:45%;}
+    100%  {left:0%; top:0%;}
+}
+/* Standard syntax */
+@keyframes example10 {
+    0%   {left:0%; top:45%;}
+    100%  {left:0%; top:0%;}
+}
+
+
+/** mobile view style**/
+
+@media screen and (max-width: 736px) {
+    .game_title {
+        font-size: 36px;
+    }
+    .toy_logo{
+        height: 9vh;
+        width: 30vh;
+    }
+    .math_equation{
+        position: relative;
+        top:-7px;
+        font-size: 30px;
+
+    }
+    .equation_ans{
+        font-size: 2.5em;
+        margin-left: 25%;
+    }
+    .message_window{
+        margin-left: 28%;
+    }
+    .equation_row{
+        margin-left: 25%;
+    }
+    .enter{
+        margin-left: 40%;
+    }
+    .car{
+        height: 70px;
+        width: 70px;
+    }
+
+
+
+}

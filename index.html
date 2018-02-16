@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="eng">
+    <meta name="description" content="math game for kids"><!--declared what is content in page-->
+    <meta name="author" content="ashwini kasat">
+    <meta name="keywords" content="HTML, CSS, jQuary,javaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Kids math game</title>
+    <script src="script2_car_logic.js"></script>
+    <script src="script2.js"></script>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" type="text/css" href="style_back_car.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="header">
+        <div class="row toy_logo_row">
+            <img class="toy_logo col-sm-3 " src="images/car.jpg">
+            <h1 class="game_title col-sm-8">Math Car Game</h1>
+        </div>
+        <p class="head-p text-center ">Learn Addition, Subtraction, Multiplication and Division in fun way.</p>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h3>Select your option</h3>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="dropdown operation ">
+                    <a class="dropdown-toggle addition active true" data-toggle="dropdown" href="#">Addition
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="add_easy"><a class="add_easy" href="#">Easy</a></li>
+                        <li class="add_hard"><a class="add_hard" href="#">Hard</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown operation ">
+                    <a class="dropdown-toggle subtraction" data-toggle="dropdown" href="#">Subtraction
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="sub_easy"><a class="sub_easy" href="#">Easy</a></li>
+                        <li class="sub_hard"><a class="sub_hard" href="#">Hard</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown operation ">
+                    <a class="dropdown-toggle multiplication" data-toggle="dropdown" href="#">Multiplication
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="multi_easy"><a href="#">Easy</a></li>
+                        <li class="multi_hard"><a href="#">Hard</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown operation ">
+                    <a class="dropdown-toggle division" data-toggle="dropdown" href="#">Division
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="divi_easy"><a href="#">Easy</a></li>
+                        <li class="divi_hard"><a href="#">Hard</a></li>
+                    </ul>
+                </li>
+                <li><button class="btn btn-default reset ">Reset</button>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="col-xs-6"><a href="#">Score</a><span class="score">0</span></li>
+                <li class="col-xs-6"><a href="#">Level</a><span class="level">0</span></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="game_board col-xs-12">
+        <div class="car" id="car"></div>
+        <div class="row equation_row col-xs-6 col-sm-3 center-block">
+            <div class="equation">
+                <span class="math_equation text-center "></span>
+            </div>
+            <input class="col-xs-6 col-sm-6 equation_ans ">
+        </div>
+            <button class="btn btn-default enter col-xs-3">Enter</button>
+
+        <div class="message_window col-xs-6 col-sm-3"></div>
+    </div>
+    <!--<div class="modal fade" id="myModal3" role="dialog">-->
+        <!--<div class="modal-dialog">-->
+
+            <!--&lt;!&ndash; Modal content&ndash;&gt;-->
+            <!--<div class="modal-content">-->
+                <!--<div class="modal-header">-->
+                    <!--<button type="button" class="close" data-dismiss="modal">×</button>-->
+                    <!--<h4 class="modal-title">Select math opration</h4>-->
+                <!--</div>-->
+                <!--<div class="modal-body">-->
+                    <!--<p>Addition</p>-->
+                    <!--<ul>-->
+                        <!--<li class="add_easy active"><input type="radio" name="operation"> Easy</li>-->
+                        <!--<li class="add_hard"><input type="radio" name="operation"> Hard</li>-->
+                    <!--</ul>-->
+                    <!--<br>-->
+                    <!--<p>Subtraction</p>-->
+                    <!--<ul>-->
+                        <!--<li class="sub_easy"><input type="radio" name="operation"> Easy</li>-->
+                        <!--<li class="sub_hard"><input type="radio" name="operation"> Hard</li>-->
+                    <!--</ul>-->
+                    <!--<br>-->
+                    <!--<p>Multiplication</p>-->
+                    <!--<ul>-->
+                        <!--<li class="multi_easy"><input type="radio" name="operation"> Easy</li>-->
+                        <!--<li class="multi_hard"><input type="radio" name="operation"> Hard</li>-->
+                    <!--</ul>-->
+                    <!--<br>-->
+                    <!--<p>Divition</p>-->
+                    <!--<ul>-->
+                        <!--<li class="divi_easy"><input type="radio" name="operation"> Easy</li>-->
+                        <!--<li class="divi_hard"><input type="radio" name="operation"> Hard</li>-->
+                    <!--</ul>-->
+
+                <!--</div>-->
+                <!--<div class="modal-footer">-->
+                    <!--<button type="button" class="btn btn-success" data-dismiss="modal">Start</button>-->
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+
+</div>
+
+</body>
+</html>
