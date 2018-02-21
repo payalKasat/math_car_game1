@@ -141,7 +141,7 @@
 }
 /* Standard syntax */
 @keyframes example_start {
-    100%  {left:0%; top:0%;}
+    100%  {left:0; top:0;}
 }
 
 .car_move{
